@@ -67,6 +67,9 @@ arr=display.split("");
 let a=arr.pop();
 document.getElementById("text").value=arr.join("");
 break;
+case 16:
+document.getElementById("text").value="";
+break;
 }
 }
 }
@@ -92,6 +95,9 @@ document.getElementById("text").value=eval(display);
 <input type="text" id="text">
 <div class="btn">
 
+<button  onclick="add(15)">🔙</button>
+<button  onclick="add(16)">©️</button>
+<button  onclick="result()" >🟰</button> 
 <button  onclick="add(0)" >0️⃣</button>
 <button  onclick="add(1)" >1️⃣</button>
 <button  onclick="add(2)" >2️⃣</button>
@@ -107,8 +113,6 @@ document.getElementById("text").value=eval(display);
 <button  onclick="add(12)" >➖</button>
 <button  onclick="add(13)" >✖️</button>
 <button  onclick="add(14)" >➗</button>
-<button  onclick="add(15)">❌</button>
-<button  onclick="result()" style="width:200%;">🟰</button> 
 
 </div>
 
